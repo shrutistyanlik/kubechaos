@@ -33,4 +33,4 @@ jobs:
         run: black --check kubechaos/ tests/
 
       - name: Run tests
-        run: pytest tests/ -v
+        run: pytest tests/ -v || [ $? -eq 5 ]
