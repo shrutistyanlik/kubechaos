@@ -1,6 +1,5 @@
 from kubernetes import client
 
-
 PROTECTED_NAMESPACES = frozenset({"kube-system", "kube-public", "default"})
 
 
